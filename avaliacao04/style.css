@@ -1,0 +1,270 @@
+body {
+    font-family: 'Playfair Display', serif; 
+    color: #333; 
+    background-color: #f8f8f8;
+    line-height: 1.6;
+    margin: 0;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 700;
+    margin-bottom: 0.5em;
+    letter-spacing: 1px; 
+}
+
+p {
+    font-family: Arial, sans-serif; 
+    color: #555;
+}
+
+
+.header-principal {
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); 
+    padding: 1.5rem 5%;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2.5rem;
+    color: #8B0000; 
+}
+
+.lista-menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.link-menu {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+.link-menu:hover {
+    color: #B8860B;
+}
+
+.link-destaque {
+    border: 1px solid #B8860B;
+    padding: 8px 15px;
+    border-radius: 3px;
+    color: #B8860B;
+}
+
+
+.secao-hero {
+
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('img/hero_background.jpg') center/cover no-repeat;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+}
+
+.subtitulo-elegante {
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.titulo-impacto {
+    font-size: 4rem;
+    margin: 0;
+}
+
+
+.btn-primario {
+    background-color: #8B0000;
+    color: #fff;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primario:hover {
+    background-color: #A52A2A;
+}
+
+
+section {
+    padding: 80px 5%;
+    text-align: center;
+}
+
+.titulo-secao {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #ddd;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.grid-filosofia {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.item-filosofia {
+    max-width: 30%;
+}
+
+.icone-filosofia {
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.grid-cardapio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.pizza-item {
+    background-color: #fff;
+    text-align: left;
+    border: 1px solid #eee;
+    transition: transform 0.3s ease;
+}
+
+.pizza-click {
+    cursor: pointer; 
+}
+
+.pizza-item:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.pizza-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.info-pizza {
+    padding: 20px;
+}
+
+.titulo-pizza {
+    font-size: 1.8rem;
+    color: #8B0000;
+}
+
+.descricao-pizza {
+    margin-bottom: 15px;
+}
+
+.preco-pizza {
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: #000;
+}
+
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.modal-conteudo {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+}
+
+.fechar-modal {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.fechar-modal:hover,
+.fechar-modal:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.opcoes-entrega button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid #8B0000; 
+    background-color: #8B0000;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.opcoes-entrega button:hover {
+    background-color: #A52A2A;
+}
+
+.nota-modal {
+    font-size: 0.9em;
+    margin-top: 20px;
+    color: #777;
+}
+
+
+.footer-principal {
+    background-color: #000000;
+    color: #eee;
+    padding: 40px 5%;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.contato-info, .redes-sociais {
+    margin-bottom: 15px;
+}
+
+.footer-principal a {
+    color: #B8860B;
+    text-decoration: none;
+}

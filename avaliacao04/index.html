@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Fornace | Pizzaria Artesanal</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+
+    <header class="header-principal">
+        <div class="header-conteudo">
+            <div class="logo">
+                <img src="img/em-frente-a-praia.jpg" alt="Logo biritas" class="logo-imagem">
+                <span class="logo-texto">biritas</span>
+                <span class="logo-slogan">Pizzaria Artesanal</span>
+            </div>
+            <nav class="menu-navegacao">
+                <ul>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="secao-cardapio" id="cardapio">
+            <h3 class="titulo-secao">Nosso Cardápio Artesanal</h3>
+            
+            <div class="grid-cardapio">
+                
+                <article class="pizza-item pizza-click" data-pizza-nome="nº1 Calabresa">
+                    <div class="moldura-pizza">
+                        <img src="img/513d7a0ab11e38f7bd117d760146fed3_XL.jpg" alt="Pizza de Calabresa">
+                        <div class="info-pizza">
+                            <h4 class="titulo-pizza">nº1 Calabresa</h4>
+                            <p class="descricao-pizza">Queijo de cabra, calabresa de primeira, trigo da arabia.</p>
+                            <span class="preco-pizza">R$ 28,00</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="pizza-item pizza-click" data-pizza-nome="nº2 Premiun de doce">
+                    <div class="moldura-pizza">
+                        <img src="img/pizza-dv.webp" alt="Pizza Premiun de Doce">
+                        <div class="info-pizza">
+                            <h4 class="titulo-pizza">nº2 Premiun de doce</h4>
+                            <p class="descricao-pizza">Creme de trufas negras, morgo da nigeria.</p>
+                            <span class="preco-pizza">R$ 45,00</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="pizza-item pizza-click" data-pizza-nome="nº3 Barbecue">
+                    <div class="moldura-pizza">
+                        <img src="img/AR-24878-bbq-chicken-pizza-beauty-4x3-39cd80585ad04941914dca4bd82eae3d.jpg" alt="Pizza Barbecue">
+                        <div class="info-pizza">
+                            <h4 class="titulo-pizza">nº3 Barbecue</h4>
+                            <p class="descricao-pizza">Melhores ingredientes como molho de primeira da frança, massa preparada a 2 dias.</p>
+                            <span class="preco-pizza">R$ 39,00</span>
+                        </div>
+                    </div>
+                </article>
+                
+            </div>
+        </section>
+
+    </main>
+    
+    <footer class="footer-principal">
+        <p>&copy; 2025 La Fornace | Pizzaria Artesanal. Todos os direitos reservados.</p>
+    </footer>
+
+    <div id="modal-entrega" class="modal">
+        <div class="modal-conteudo">
+            <span class="fechar-modal">&times;</span>
+            <h4>Você escolheu: <span id="pizza-escolhida"></span></h4>
+            
+            <h3>Como Deseja Receber seu Pedido?</h3>
+            
+            <div class="opcoes-entrega">
+                <button class="btn-entrega entrega-domicilio">🏍️ Entrega em Domicílio</button>
+                <button class="btn-entrega retirada-local">🚶 Retirada no Local</button>
+            </div>
+            <p class="nota-modal">As opções de endereço e pagamento serão solicitadas na próxima etapa.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
